@@ -11,16 +11,19 @@ router.get("/", function(req, res) {
       var hbsObject = {
         burgers: data
       };
+      console.log(" --- "); // DELETE THIS 
       console.log(hbsObject);
+      console.log(" --- "); // DELETE THIS 
+
       res.render("index", hbsObject);
     });
   });
   
   router.post("/api/burgers", function(req, res) {
     burger.insertOne([
-      "name", "devoured"
+      "burger_name", "devoured"
     ], [
-      req.body.name, req.body.devoured
+      req.body.burger_name, req.body.devoured
     ], function(result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
