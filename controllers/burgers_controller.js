@@ -11,10 +11,7 @@ router.get("/", function(req, res) {
       var hbsObject = {
         burgers: data
       };
-      console.log(" --- "); // DELETE THIS 
-      console.log(hbsObject);
-      console.log(" --- "); // DELETE THIS 
-      console.log(" --- "); // DELETE THIS 
+    //   console.log(hbsObject);
 
       res.render("index", hbsObject);
     });
@@ -32,10 +29,7 @@ router.get("/", function(req, res) {
   });
   
   router.put("/api/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
-  
-    console.log("condition", condition);
-  
+    var condition = "id = " + req.params.id;  
     burger.updateOne({
       devoured: req.body.devoured
     }, condition, function(result) {

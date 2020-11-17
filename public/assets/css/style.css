@@ -1,7 +1,40 @@
+body {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #eea14f);}
+
+ul {
+  list-style-type: none;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #ebf8e1;
+  font-weight: bold;
+
+}
+
+button {
+  border-radius: 5px;
+
+}
+
+#ca {
+  background: linear-gradient(0.5turn, #ebf8e1, #f69d3c);
+
+}
+
+#add-to-list {
+  padding-top: 20px
+}
+
+#bucket-devoured{
+  padding-top: 20px;
+}
+
+
+img {
+  border-radius: 5px;
+  background: rgba(250, 172, 27, 0.6);
 }
 
 .label {
