@@ -14,6 +14,7 @@ router.get("/", function(req, res) {
       console.log(" --- "); // DELETE THIS 
       console.log(hbsObject);
       console.log(" --- "); // DELETE THIS 
+      console.log(" --- "); // DELETE THIS 
 
       res.render("index", hbsObject);
     });
@@ -35,7 +36,7 @@ router.get("/", function(req, res) {
   
     console.log("condition", condition);
   
-    burger.update({
+    burger.updateOne({
       devoured: req.body.devoured
     }, condition, function(result) {
       if (result.changedRows == 0) {
