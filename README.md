@@ -14,7 +14,9 @@ This application is a burger logger app that uses MySQL, Node, Express, Handleba
 6. [Questions](#questions)
 
 ## Installation
-This application is deployed on Heroku and does not require any installation before using.
+This application is deployed on Heroku and does not require any installation before using. Click the link below to access the application.
+[BurgerTime](https://burger-time2020.herokuapp.com)
+
 
 ## Usage
 Users can utilize this application to keep track of burgers they have eaten or want to eat. 
